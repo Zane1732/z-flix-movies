@@ -142,8 +142,8 @@ const Navbar = () => {
             to="/"
             className="flex items-center text-white text-xl font-bold transition-transform hover:scale-105"
           >
-            <span className="text-accent">Let's</span>
-            <span className="ml-1">Stream</span>
+            <span className="text-accent">ZANE</span>
+            <span className="ml-1">FLIX</span>
           </Link>
 
           {/* Mobile Search Bar */}
