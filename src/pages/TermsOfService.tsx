@@ -10,7 +10,7 @@ const TermsOfService = () => {
           <h2 className="text-xl font-semibold text-yellow-500 mb-2">Educational Demonstration Notice</h2>
           <p className="text-white/80">
             This application is strictly an educational demonstration project. We do not host, store, or distribute any media content. 
-            All content is fetched from third-party APIs for demonstration purposes only.
+            All content is fetched from own code base APIs for demonstration purposes only.
           </p>
         </div>
 
@@ -28,14 +28,14 @@ const TermsOfService = () => {
 
         <h2 className="text-2xl font-semibold mb-3">3. Disclaimer of Responsibility</h2>
         <p className="mb-4">
-          We are not responsible for any content displayed through third-party APIs. We do not verify, endorse, or take responsibility 
+          We are not responsible for any content displayed through  APIs. We do not verify, endorse, or take responsibility 
           for any content shown through our demonstration interface.
         </p>
 
         <h2 className="text-2xl font-semibold mb-3">4. Third-Party Content</h2>
         <p className="mb-4">
-          All media content displayed is sourced from third-party APIs. Rights to such content belong to their respective owners. 
-          We do not claim ownership of any media content displayed through our interface.
+          All media content displayed is sourced from  APIs. Rights to such content belong to their respective providers. 
+          We do not claim ownership of any media content displayed through our interface becuz its api based by 3rd party.
         </p>
 
         <h2 className="text-2xl font-semibold mb-3">5. No Warranties</h2>
@@ -58,7 +58,7 @@ const TermsOfService = () => {
 
         <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4 mt-6">
           <p className="text-white/80">
-            Last updated: March 26, 2025
+            Last updated: jun 11, 2025
           </p>
         </div>
       </div>
