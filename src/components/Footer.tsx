@@ -17,37 +17,48 @@ const Footer = () => {
             </p>
           </div>
           
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-white font-medium mb-4">Explore</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link to="/" className="text-white/70 hover:text-white transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/movies" className="text-white/70 hover:text-white transition-colors">
-                  Movies
-                </Link>
-              </li>
-              <li>
-                <Link to="/tv" className="text-white/70 hover:text-white transition-colors">
-                  TV Shows
-                </Link>
-              </li>
-              <li>
-                <Link to="/trending" className="text-white/70 hover:text-white transition-colors">
-                  Trending
-                </Link>
-              </li>
-              <li>
-                <Link to="/search" className="text-white/70 hover:text-white transition-colors">
-                  Search
-                </Link>
-              </li>
-            </ul>
-          </div>
+          {/* Quick Links */}  
+          
+          {/* Social */}
+<div>
+  <h3 className="text-white font-medium mb-4">Connect</h3>
+  <div className="flex space-x-3">
+    <a 
+      href="https://zane-lol.vercel.app/" 
+      className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
+      aria-label="zane bio"
+    >
+      <User className="h-5 w-5 text-white" />
+    </a>
+    {/* Removed Twitter button */}
+
+    <a 
+      href="https://byzanebio.vercel.app/" 
+      className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
+      aria-label="intro"
+    >
+      <User className="h-5 w-5 text-white" />
+    </a>
+    <a 
+      href="https://instagram.com/zane_ox0" 
+      className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
+      aria-label="Instagram"
+    >
+      <Instagram className="h-5 w-5 text-white" />
+    </a>
+    <a 
+      href="mailto:kk2216157@gmail.com" 
+      className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
+      aria-label="Email"
+    >
+      <Mail className="h-5 w-5 text-white" />
+    </a>
+  </div>
+  <p className="mt-4 text-white/50 text-xs">
+    Powered by ZANE
+  </p>
+</div>
+
           
           {/* Legal */}
           <div>
