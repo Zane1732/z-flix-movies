@@ -1,4 +1,5 @@
-mport { Link } from 'react-router-dom';
+
+import { Link } from 'react-router-dom';
 import { ExternalLink, Github, Twitter, Facebook, Instagram, Mail } from 'lucide-react';
 
 const Footer = () => {
@@ -122,13 +123,13 @@ const Footer = () => {
               </a>
             </div>
             <p className="mt-4 text-white/50 text-xs">
-              Powered by ZANE
+              Powered by TMDB
             </p>
           </div>
         </div>
         
         <div className="mt-8 pt-4 border-t border-white/10 text-center text-white/50 text-xs">
-          <p>© {currentYear}ZANEFLIX All rights reserved.</p>
+          <p>© {currentYear}Let's Stream V2.0 All rights reserved.</p>
           <p className="mt-1">
             This site does not store any files on its server. All contents are provided by non-affiliated third parties.
           </p>
