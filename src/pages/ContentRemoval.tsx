@@ -20,8 +20,8 @@ const ContentRemoval = () => {
         </p>
         <ul className="list-disc pl-6 mb-4">
           <li>We do not host any media content</li>
-          <li>Content is displayed through third-party APIs</li>
-          <li>We have no control over the content provided by these services</li>
+          <li>we have our own database</li>
+          <li>use it to watch animes and movies</li>
           <li>This project is for educational purposes only</li>
         </ul>
 
