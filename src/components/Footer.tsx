@@ -92,7 +92,6 @@ const Footer = () => {
                 aria-label="GitHub"
               >
                 <Github className="h-5 w-5 text-white" />
-              </a
               </a>
               <a 
                 href="https://instagram.com/zane_ox0" 
