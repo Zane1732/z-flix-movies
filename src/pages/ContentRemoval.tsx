@@ -54,7 +54,7 @@ const ContentRemoval = () => {
         <p className="mb-4">
           For questions about this educational demonstration, contact:
           <br />
-          Email: demo@example.com (for demonstration purposes only)
+          Email: anderszame@gmail.com
         </p>
 
         <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4 mt-6">
