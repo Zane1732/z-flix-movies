@@ -142,7 +142,7 @@ const Navbar = () => {
             to="/"
             className="flex items-center text-white text-xl font-bold transition-transform hover:scale-105"
           >
-            <span className="text-accent">Zane</span>
+            <span className="text-accent">Z</span>
             <span className="ml-1">flix</span>
           </Link>
 
