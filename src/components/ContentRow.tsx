@@ -1,106 +1,70 @@
+import { AnimatePresence } from "framer-motion";
 
-import { useState, useRef } from 'react';
-import { Media } from '@/utils/types';
-import MediaCard from './MediaCard';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-
-interface ContentRowProps {
-  title: string;
-  media: Media[];
-  featured?: boolean;
-}
-
-const ContentRow = ({ title, media, featured = false }: ContentRowProps) => {
-  const rowRef = useRef<HTMLDivElement>(null);
-  const [showLeftArrow, setShowLeftArrow] = useState(false);
-  const [showRightArrow, setShowRightArrow] = useState(true);
-  const [isHovering, setIsHovering] = useState(false);
-  
-  // Handle scroll position to show/hide arrows
-  const handleScroll = () => {
-    if (!rowRef.current) return;
-    
-    const { scrollLeft, scrollWidth, clientWidth } = rowRef.current;
-    setShowLeftArrow(scrollLeft > 0);
-    setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 10); // 10px buffer
-  };
-  
-  // Scroll functions
-  const scrollLeft = () => {
-    if (!rowRef.current) return;
-    const scrollAmount = rowRef.current.clientWidth * 0.75;
-    rowRef.current.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-  };
-  
-  const scrollRight = () => {
-    if (!rowRef.current) return;
-    const scrollAmount = rowRef.current.clientWidth * 0.75;
-    rowRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-  };
-  
-  if (!media || media.length === 0) return null;
-  
+const ContentRemoval = () => {
   return (
-    <div 
-      className="px-4 md:px-8 mb-8 opacity-0 animate-fade-in"
-      style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}
-    >
-      <h2 className="text-xl md:text-2xl font-bold text-white mb-4">{title}</h2>
-      
-      <div 
-        className="relative group"
-        onMouseEnter={() => setIsHovering(true)}
-        onMouseLeave={() => setIsHovering(false)}
-      >
-        {/* Left scroll button */}
-        {showLeftArrow && (
-          <button
-            className={`absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-black/70 text-white transition-all ${
-              isHovering ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'
-            }`}
-            onClick={scrollLeft}
-            aria-label="Scroll left"
-          >
-            <ChevronLeft className="h-6 w-6" />
-          </button>
-        )}
-        
-        {/* Content row */}
-        <div 
-          ref={rowRef}
-          className="flex overflow-x-auto hide-scrollbar gap-4 pb-4"
-          onScroll={handleScroll}
-        >
-          {media.map((item, index) => (
-            <div 
-              key={`${item.media_type}-${item.id}`} 
-              className={featured ? 'flex-none w-[220px]' : 'flex-none w-[160px] md:w-[180px]'}
-              style={{ 
-                opacity: 0,
-                animation: 'fade-in 0.5s ease-out forwards',
-                animationDelay: `${index * 0.05}s` 
-              }}
-            >
-              <MediaCard media={item} featured={featured} />
-            </div>
-          ))}
+    <AnimatePresence mode="wait">
+      <div className="container mx-auto p-4 prose prose-invert max-w-4xl">
+        <h1 className="text-3xl font-bold mb-4">Content Removal</h1>
+
+        <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-4 mb-6">
+          <h2 className="text-xl font-semibold text-yellow-500 mb-2">Educational Project Notice</h2>
+          <p className="text-white/80">
+            This is an educational demonstration project. We do not host or store any media content. 
+            All content removal requests should be directed to the appropriate content owners or hosting services.
+          </p>
         </div>
-        
-        {/* Right scroll button */}
-        {showRightArrow && (
-          <button
-            className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-black/70 text-white transition-all ${
-              isHovering ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4'
-            }`}
-            onClick={scrollRight}
-            aria-label="Scroll right"
-          >
-            <ChevronRight className="h-6 w-6" />
-          </button>
-        )}
+
+        <h2 className="text-2xl font-semibold mb-3">Understanding Our Role</h2>
+        <p className="mb-4">
+          As an educational frontend demonstration:
+        </p>
+        <ul className="list-disc pl-6 mb-4">
+          <li>We do not host any media content</li>
+          <li>Content is displayed through third-party APIs</li>
+          <li>We have no control over the content provided by these services</li>
+          <li>This project is for educational purposes only</li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold mb-3">How to Remove Content</h2>
+        <p className="mb-4">
+          If you wish to have content removed:
+        </p>
+        <ol className="list-decimal pl-6 mb-4">
+          <li>Identify the specific content in question</li>
+          <li>Determine which third-party service is hosting the content</li>
+          <li>Contact the appropriate content host or owner directly</li>
+          <li>Follow their content removal procedures</li>
+        </ol>
+
+        <h2 className="text-2xl font-semibold mb-3">Third-Party Services</h2>
+        <p className="mb-4">
+          Content removal requests should be directed to the respective content owners or hosting services. 
+          We cannot process content removal requests as we do not host or control any media content.
+        </p>
+
+        <div className="bg-gray-500/10 border border-gray-500/20 rounded-lg p-4 mb-6">
+          <h3 className="text-xl font-semibold mb-2">Important Note</h3>
+          <p className="text-white/80">
+            This application may be discontinued at any time as it exists solely for educational and demonstration purposes. 
+            We are not responsible for any content displayed through third-party APIs.
+          </p>
+        </div>
+
+        <h2 className="text-2xl font-semibold mb-3">Contact</h2>
+        <p className="mb-4">
+          For questions about this educational demonstration, contact:
+          <br />
+          Email: demo@example.com (for demonstration purposes only)
+        </p>
+
+        <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4 mt-6">
+          <p className="text-white/80">
+            Last updated: March 26, 2025
+          </p>
+        </div>
       </div>
-    </div>
+    </AnimatePresence>
   );
 };
 
-export default ContentRow;
+export default ContentRemoval;
