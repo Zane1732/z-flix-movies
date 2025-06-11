@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
-            <h3 className="text-white font-medium text-lg mb-4">Let's Stream V2.0</h3>
+            <h3 className="text-white font-medium text-lg mb-4">Z-FLIX V2.0</h3>
             <p className="text-white/70 text-sm">
               Discover and enjoy the best movies and TV shows all in one place.Let's Stream V2.0 helps you find, explore, and watch your favorite content online.
             </p>
