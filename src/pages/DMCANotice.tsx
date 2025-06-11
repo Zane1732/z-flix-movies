@@ -9,7 +9,7 @@ const DMCANotice = () => {
         <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-4 mb-6">
           <h2 className="text-xl font-semibold text-yellow-500 mb-2">Important Notice</h2>
           <p className="text-white/80">
-            This is an educational demonstration project that does not host any content. All content is fetched from third-party APIs. 
+            This is an educational demonstration project that does not host any content. All content is fetched from own codebase APIs. 
             DMCA notices should be directed to the respective content owners or hosting services.
           </p>
         </div>
@@ -20,7 +20,7 @@ const DMCANotice = () => {
         </p>
         <ul className="list-disc pl-6 mb-4">
           <li>Does not host or store any media content</li>
-          <li>Uses third-party APIs for educational purposes only</li>
+          <li>Uses own database APIs for educational purposes only</li>
           <li>Has no control over the content provided by these APIs</li>
           <li>May be discontinued at any time</li>
         </ul>
@@ -45,14 +45,14 @@ const DMCANotice = () => {
         <div className="bg-gray-500/10 border border-gray-500/20 rounded-lg p-4 mb-6">
           <h3 className="text-xl font-semibold mb-2">Disclaimer</h3>
           <p className="text-white/80">
-            We are not responsible for any content displayed through third-party APIs. This is purely an educational 
+            We are not responsible for any content displayed through APIs. This is purely an educational 
             demonstration of frontend development techniques.
           </p>
         </div>
 
         <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4 mt-6">
           <p className="text-white/80">
-            Last updated: March 26, 2025
+            Last updated: jun 11, 2025
           </p>
         </div>
       </div>
