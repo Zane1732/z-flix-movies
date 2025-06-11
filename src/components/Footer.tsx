@@ -1,5 +1,4 @@
-
-import { Link } from 'react-router-dom';
+mport { Link } from 'react-router-dom';
 import { ExternalLink, Github, Twitter, Facebook, Instagram, Mail } from 'lucide-react';
 
 const Footer = () => {
@@ -82,78 +81,57 @@ const Footer = () => {
             </ul>
           </div>
           
-                  {/* Social */}
-          <FooterSection title="Connect" id="connect">
-            <div className="flex flex-wrap gap-2">
+          {/* Social */}
+          <div>
+            <h3 className="text-white font-medium mb-4">Connect</h3>
+            <div className="flex space-x-3">
               <a 
                 href="https://github.com/chintan992" 
-                className="bg-white/5 hover:bg-accent/20 hover:scale-105 p-2 rounded-full transition-all duration-200"
+                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
                 aria-label="GitHub"
               >
                 <Github className="h-5 w-5 text-white" />
               </a>
               <a 
                 href="https://x.com/sid992r" 
-                className="bg-white/5 hover:bg-accent/20 hover:scale-105 p-2 rounded-full transition-all duration-200"
+                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="h-5 w-5 text-white" />
               </a>
               <a 
                 href="https://facebook.com/chintan992" 
-                className="bg-white/5 hover:bg-accent/20 hover:scale-105 p-2 rounded-full transition-all duration-200"
+                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5 text-white" />
               </a>
               <a 
                 href="https://instagram.com/chintan992" 
-                className="bg-white/5 hover:bg-accent/20 hover:scale-105 p-2 rounded-full transition-all duration-200"
+                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5 text-white" />
               </a>
               <a 
                 href="mailto:chintanr21@gmail.com" 
-                className="bg-white/5 hover:bg-accent/20 hover:scale-105 p-2 rounded-full transition-all duration-200"
+                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
                 aria-label="Email"
               >
                 <Mail className="h-5 w-5 text-white" />
               </a>
             </div>
-            <p className="mt-4 text-white/50 text-xs flex items-center">
-              <span className="mr-1">Powered by</span>
-              <a 
-                href="https://www.themoviedb.org/" 
-                className="hover:text-accent transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ZANEFLIX
-              </a>
-            </p>
-          </FooterSection>
-        </div>
-        
-        <div className="mt-8 pt-4 border-t border-white/10 text-center">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-2">
-            <p className="text-white/50 text-xs flex items-center">
-              © {currentYear} Z-FLIX All rights reserved.
-              <span className="inline-flex items-center mx-1">
-                Built with <Heart className="h-3 w-3 text-accent mx-1" fill="#E63462" /> by the community
-              </span>
-            </p>
-            
-            <p className="text-white/50 text-xs hidden md:block">
-              This site does not store any files on its server. All contents are provided by non-affiliated third parties.
+            <p className="mt-4 text-white/50 text-xs">
+              Powered by ZANE
             </p>
           </div>
-          
-          {isMobile && (
-            <p className="text-white/50 text-xs mt-2">
-              This site does not store any files on its server.
-            </p>
-          )}
+        </div>
+        
+        <div className="mt-8 pt-4 border-t border-white/10 text-center text-white/50 text-xs">
+          <p>© {currentYear}ZANEFLIX All rights reserved.</p>
+          <p className="mt-1">
+            This site does not store any files on its server. All contents are provided by non-affiliated third parties.
+          </p>
         </div>
       </div>
     </footer>
