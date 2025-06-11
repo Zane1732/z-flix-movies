@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
-            <h3 className="text-white font-medium text-lg mb-4">Let's Stream V2.0</h3>
+            <h3 className="text-white font-medium text-lg mb-4">Z-FLIX BY ZANE</h3>
             <p className="text-white/70 text-sm">
               Discover and enjoy the best movies and TV shows all in one place.Let's Stream V2.0 helps you find, explore, and watch your favorite content online.
             </p>
@@ -87,35 +87,22 @@ const Footer = () => {
             <h3 className="text-white font-medium mb-4">Connect</h3>
             <div className="flex space-x-3">
               <a 
-                href="https://github.com/chintan992" 
+                href="" 
                 className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
                 aria-label="GitHub"
               >
                 <Github className="h-5 w-5 text-white" />
+              </a
               </a>
               <a 
-                href="https://x.com/sid992r" 
-                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5 text-white" />
-              </a>
-              <a 
-                href="https://facebook.com/chintan992" 
-                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-5 w-5 text-white" />
-              </a>
-              <a 
-                href="https://instagram.com/chintan992" 
+                href="https://instagram.com/zane_ox0" 
                 className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5 text-white" />
               </a>
               <a 
-                href="mailto:chintanr21@gmail.com" 
+                href="anderszame@gmail.com" 
                 className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
                 aria-label="Email"
               >
@@ -123,13 +110,13 @@ const Footer = () => {
               </a>
             </div>
             <p className="mt-4 text-white/50 text-xs">
-              Powered by TMDB
+              Powered by Z-FLIX OWNER ZANE
             </p>
           </div>
         </div>
         
         <div className="mt-8 pt-4 border-t border-white/10 text-center text-white/50 text-xs">
-          <p>© {currentYear}Let's Stream V2.0 All rights reserved.</p>
+          <p>© {currentYear}Z-FLIX All rights reserved.</p>
           <p className="mt-1">
             This site does not store any files on its server. All contents are provided by non-affiliated third parties.
           </p>
