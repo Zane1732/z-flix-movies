@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
         <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-4 mb-6">
           <h2 className="text-xl font-semibold text-yellow-500 mb-2">Educational Demonstration Notice</h2>
           <p className="text-white/80">
-            This application is an educational demonstration that uses own code base with third-party APIs. We prioritize your privacy while 
+            This application is an educational demonstration that uses third-party APIs. We prioritize your privacy while 
             demonstrating frontend development concepts.
           </p>
         </div>
@@ -70,7 +70,7 @@ const PrivacyPolicy = () => {
 
         <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4 mt-6">
           <p className="text-white/80">
-            Last updated: jun 11, 2025
+            Last updated: March 26, 2025
           </p>
         </div>
       </div>
